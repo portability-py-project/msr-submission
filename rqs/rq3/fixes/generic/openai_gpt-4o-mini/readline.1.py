@@ -1,0 +1,1 @@
+HISTORY_FILE = os.path.expanduser("~/.cooragent_history") if platform.system() != "Windows" else os.path.join(os.environ['USERPROFILE'], ".cooragent_history")

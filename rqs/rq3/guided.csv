@@ -1,0 +1,31 @@
+code,specific_portability_issue,General_Fix_Pattern,symptom
+Address_already_in_use.1.py,"Address already in use,",Defensive checks + Environment handling,OSError: [Errno 98] Address already in use (Linux) / [WinError 10048] (Windows)
+Address_already_in_use.2.py,"Address already in use,",Defensive checks + Environment handling,OSError: [Errno 98] Address already in use (Linux) / [WinError 10048] (Windows)
+Command_execution_mismatch.1.py,Shell command execution,Portable API,
+Command_execution_mismatch.2.py,Shell command execution,Portable API,
+Curses_maybe_not_avaliable_Win.1.py,"Missing curses,",Defensive check,ModuleNotFoundError: No module named '_curses' (Windows)
+Dynamic_library_loading_mismatch.1.py,"Dynamic library loading,",Defensive check,OSError: [WinError 126] The specified module could not be found (Windows)
+Encoding_mismatch.1.py,"Encoding,",Normalization,UnicodeDecodeError: 'charmap' codec can't decode byte 0x{XX} in position N
+Encoding_mismatch.2.py,"Encoding,",Normalization,UnicodeDecodeError: 'charmap' codec can't decode byte 0x{XX} in position N
+File_descriptor_limits.1.py,"File descriptor limits,",Environment handling,OSError: [Errno 24] Too many open files
+geteuid().1.py,Methods: os.geteuid()       ,Portable APIs + Defensive checks,AttributeError: module 'os' has no attribute '{method}' (Windows)
+getuid().1.py,Methods: os.getuid(),Portable APIs + Defensive checks,AttributeError: module 'os' has no attribute '{method}' (Windows)
+GUI_window-manager_differences.1.py,GUI differences,Environment handling,
+GUI_window-manager_differences.2.py,GUI differences,Environment handling,
+lib_fcntl_dont_works_in_windows.py,"Platform-specific libraries (e.g. fcntl),",Defensive checks,ModuleNotFoundError: No module named 'fcntl' (Windows)
+Line_ending_mismatch.1.py,Line endings,Normalization,AssertionError: '\r\n' != '\n'
+Line_ending_mismatch.2.py,Line endings,Normalization,AssertionError: '\r\n' != '\n'
+missing_a_lib.1.py,Missing libraries,Defensive checks,ModuleNotFoundError: No module named '{library_name}'
+missing_a_lib.2.py,Missing libraries,Defensive checks,ModuleNotFoundError: No module named '{library_name}'
+no_display_avaliable_in_github_ci_for_linux.1.py,No display in github CI (linux),Environment handling,TclError: no display name and no $DISPLAY environment variable
+Opened_file_locking.1.py,File locking,Environment handling,PermissionError: [WinError 32] The process cannot access the file because it is being used by another process (Windows)
+Opened_file_locking.2.py,File locking,Environment handling,PermissionError: [WinError 32] The process cannot access the file because it is being used by another process (Windows)
+OS-specific_pathing.1.py,Path separators,Normalization,
+permission_mismatch.1.py,Permission,Defensive checks + Environment handling,
+permission_mismatch.2.py,Permission,Defensive checks + Environment handling,
+readline.1.py,Modules: readline,Defensive checks,ModuleNotFoundError: No module named '{module}' (Windows)
+resource.1.py,Modules: resource,Defensive checks,ModuleNotFoundError: No module named '{module}' (Windows)
+Signal_handling.1.py,Missing signals,Defensive checks,AttributeError: module 'signal' has no attribute 'SIGHUP' (or SIGKILL, SIGTERM variants)
+uname().1.py,Methods: os.uname(),Portable APIs + Defensive checks,AttributeError: module 'os' has no attribute '{method}' (Windows)
+uname().2.py,Methods: os.uname(),Portable APIs + Defensive checks,AttributeError: module 'os' has no attribute '{method}' (Windows)
+version.py,Methods: os.uname(),Portable APIs + Defensive checks,AttributeError: module 'os' has no attribute '{method}' (Windows)
