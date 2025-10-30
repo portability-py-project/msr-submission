@@ -1,6 +1,6 @@
 # Artifact
 
-This artifact contains data for our paper analyzing portability issues in Python projects.
+This artifact contains data for our paper "An Empirical Analysis of Portability Issues in Python Projects".
 
 ## Setup
 

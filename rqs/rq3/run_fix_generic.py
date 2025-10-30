@@ -12,9 +12,9 @@ MODELS = [
     "x-ai/grok-4-fast",
     "openai/gpt-4o-mini",
 ]
-BASE_DIR = "code/nonportable"
+BASE_DIR = "code" + os.sep + "nonportable"
 OUTPUT_SUMMARY = "fix_generic_summary.csv"
-FIXES_BASE = "fixes/generic"
+FIXES_BASE = "fixes" + os.sep + "generic"
 
 PROMPT_TEMPLATE = """
 You are a Python expert. The following code has portability issues (it may fail on Linux, macOS or Windows).

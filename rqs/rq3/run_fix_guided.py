@@ -12,9 +12,9 @@ MODELS = [
     "x-ai/grok-4-fast",
     "openai/gpt-4o-mini",
 ]
-BASE_DIR = "code/nonportable"
+BASE_DIR = "code" + os.sep + "nonportable"
 OUTPUT_SUMMARY = "fix_guided_summary.csv"
-FIXES_BASE = "fixes/guided"
+FIXES_BASE = "fixes"+ os.sep + "guided"
 GUIDED_CSV = "guided.csv"
 
 
